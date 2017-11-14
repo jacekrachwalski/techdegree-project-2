@@ -1,0 +1,361 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.name {
+    font-family: 'Righteous', cursive;
+    color: darkorange;
+}
+
+h2 {
+    letter-spacing: 5px;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+a:hover {
+    color: darkorange;
+}
+
+li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.main-content,
+.contact,
+footer {
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    padding: 20px;
+}
+
+.container {
+    padding: 6px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    padding: 30px 10px;
+}
+
+.skills img {
+    width: 150px;
+}
+
+.logos {
+    text-align: center;
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name,
+.main-nav li {
+    text-align: center;   
+}
+
+.main-nav li {
+    background-color: #fff;
+    margin: 8px;
+    padding: 10px 20px;
+    border: 2px solid #eee;
+}
+
+.main-nav a {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: black;
+}
+
+.main-nav a:hover {
+    color: darkorange;
+}
+
+/* ---- Main-Content Style---- */
+
+.main-content {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.main-content p {
+    margin-top: 20px;
+}
+
+.portfolio {
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+ .skills {
+        border-top: solid 2px #eee;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+.skills img {
+        margin: 20px auto;
+    }
+
+.skills h2{
+    padding-bottom: 20px;
+}
+
+/* ---- Contackt Style---- */
+
+.contact {
+    padding-top: 60px;
+}
+
+/* ---- Footer Style---- */
+
+.footer-small {
+    padding: 40px 20px;
+}
+
+.footer-small li {
+    display: inline-block;
+    font-size: 1em;
+}
+
+#name {
+    float: left;
+}
+
+#back {
+    float: right;
+    text-transform: uppercase;
+}
+
+.bottom-nav {
+    display: none;
+}
+
+/* ================================= 
+  Media Quaries
+==================================== */
+
+@media (min-width: 768px) {
+    
+    .name {
+        margin-bottom: 0;
+    }
+    
+    .main-nav {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .main-nav li {
+        display: inline-block;
+        font-size: 0.8em;
+        margin: 0 15px;
+        background-color: #fff;
+        border: none;
+        
+    }
+    
+    .main-content {
+        padding-top: 40px;
+    }
+    
+    .main-content p {
+        display: inline-block;
+        width: 55%;
+        float: left;
+        padding: 0 8px;
+        margin: 0;
+        text-align: left
+    }
+    
+    .main-content img {
+        display: inline-block;
+        width: 45%;
+        padding: 0 8px;
+    }
+    
+    .portfolio {
+        text-align: center;
+    }
+    
+    .portfolio-item {
+        width: 49.5%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .skills {
+        border-top: solid 2px #eee;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    
+    .logos {
+        column-count: 2;
+        margin: 30px;
+    }
+    
+    .logos img {
+     
+        margin-bottom: 30px;
+        vertical-align: top;
+    }
+    
+    .contact {
+        padding: 30px 120px 0 120px;
+    }
+    
+    footer {
+        min-height: 60px;
+        padding: 8px;
+    }
+    
+    .footer-small {
+        display: none;
+    }
+    
+    .bottom-nav {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .footer-name {
+        float: left;
+    }
+    
+    .nav-footer {
+        float: right;
+    }
+    
+    .footer-main-nav li{
+        float: left;
+        display: inline-block;
+        padding: 0 20px;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+}
+
+
+@media  (min-width: 1024px) {
+    
+    body {
+        background-color: #f9f9f9;
+    }
+   
+    header {
+        background-color: #fff;
+    }
+    
+    .container {
+        width: 96%;
+        margin: 0 auto;
+    }
+    
+    .name {
+        display: inline-block;
+        float: left;
+        margin: 0;
+    }
+    
+    .main-nav {
+        margin: 0;
+        text-align: right;
+        float: right;
+    }
+    
+    .main-content {
+        width: 96%;
+        margin: 0 auto;
+    }
+    
+    .main-content img {
+        padding: 0;
+    }
+    
+    .portfolio {
+        width: 96%;
+        background-color: #fff;
+        margin: 20px auto 40px auto;
+    }
+    
+    .portfolio-item {
+        width: 33%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .skills {
+        width: 96%;
+        background-color: #fff;
+        border-top: none;
+        margin: 0 auto;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .logos {
+        column-count: 1;
+    }
+    
+    .skills h2 {
+        padding: 0;
+    }
+    .skills img {
+        display: inline-block;
+        margin: 0 30px 20px 30px;
+    }
+    
+    .clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+
+
+
